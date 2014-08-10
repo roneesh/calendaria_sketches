@@ -57,6 +57,10 @@ a:hover {
   .sub-menu .sub-menu-link a {
     font-size: 12px; }
 
+.shareCalendarLink:hover {
+  text-decoration: none;
+  cursor: default; }
+
 .calendar-area {
   overflow: hidden;
   min-width: 400px;
@@ -99,3 +103,6 @@ a:hover {
   color: #0099cc;
   float: left;
   font-size: 13px; }
+
+.post-month-day .addEventBtn, .prior-month-day .addEventBtn {
+  color: #999999; }
