@@ -1,0 +1,93 @@
+$font-stack: 'Open Sans', Helvetica, sans-serif
+// Sky Blue
+$calendaria-blue: #0099CC
+
+=box-sizing 
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+
+body 
+  margin: 0
+
+h1 
+  font-family: $font-stack
+  color: $calendaria-blue
+a
+  font-family: $font-stack
+  font-weight: 300
+  color: white
+  letter-spacing: 1px
+  font-size: 18px
+  text-decoration: none
+a:visited
+  color: white
+a:hover
+  text-decoration: underline
+
+
+
+.title-ribbon
+  width: 100%
+  margin-top: 25px
+  background-color: $calendaria-blue
+  h1
+    margin-left: 10px
+    color: white
+
+.menu-calendar-container
+  width: 100%
+
+.menu-bar 
+  background-color: $calendaria-blue
+  width: 200px
+  margin-left: 10px
+  margin-right: 5px
+  height: 500px
+  float: left
+  +box-sizing
+
+.menu-links
+  list-style-type: none
+  padding-left: 5px
+  li
+    padding: 10px 0 0 5px
+  li:first-child
+    // padding-top: 5px
+
+.sub-menu
+  list-style-type: none
+  padding: 0
+  .sub-menu-link:first-child
+    padding-top: 10px
+  .sub-menu-link
+    padding: 5px 0 0 20px
+  .sub-menu-link a
+    font-size: 12px
+
+.calendar-area
+  overflow: hidden
+  min-width: 400px
+  +box-sizing
+
+
+.day
+  +box-sizing
+  width: 12.285714286%
+  // width: 100px
+  min-width: 100px
+  padding: 5px 10px 2px 10px
+  border: 2px solid $calendaria-blue
+  height: 62.5px
+  float: left
+  margin-right: 5px
+  margin-bottom: 10px
+
+.numericalDate
+  font-family: $font-stack
+  color: $calendaria-blue
+  font-size: 12px
+  width: 10px
+
+
