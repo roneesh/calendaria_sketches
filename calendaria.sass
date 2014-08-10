@@ -78,11 +78,10 @@ a:hover
   // width: 100px
   min-width: 100px
   padding: 5px 10px 2px 10px
-  
   height: 100px
   float: left
   margin-right: 5px
-  margin-bottom: 10px
+  margin-bottom: 5px
 
 .current-month-day
   border: 2px solid $calendaria-blue
@@ -95,8 +94,20 @@ a:hover
 
 .numericalDate
   font-family: $font-stack
-  
   font-size: 12px
   width: 10px
+  float: left
+  width: 20px
 
 
+=modalBtn
+  margin: 0
+  padding: 0
+  border: 0
+
+.addEventBtn 
+  +modalBtn
+  background-color: white
+  color: $calendaria-blue
+  float: left
+  font-size: 13px

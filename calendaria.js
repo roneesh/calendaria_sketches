@@ -9,13 +9,11 @@ $(document).ready(function() {
 		// console.log(i);
 		var date = August[0][1] - (i);
 		var dateToString = date.toString();
-		console.log(dateToString);
 		var numericalDate = "<div class='numericalDate'>" + dateToString  + "</div>";
 		var day = "<div class='day prior-month-day'>" + numericalDate + "</div>";
 		$('.calendar-area').append(day);
 
 	}
-
 	for (var i = 0; i < August[1]; i++) {
 		var dateToString = (i+1).toString();
 		var numericalDate = "<div class='numericalDate'>" + dateToString  + "</div>";
@@ -29,6 +27,11 @@ $(document).ready(function() {
 		$('.calendar-area').append(day);
 	}
 
+	var count = 0;
+	$.each($('.day'), function() {
+		var btn = "<button class='addEventBtn btn btn-primary' data-toggle='modal' data-target='.addEventModal'> Add Event </button>";
+		$(this).append(btn);
+	});
 
 
  

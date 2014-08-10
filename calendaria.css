@@ -74,7 +74,7 @@ a:hover {
   height: 100px;
   float: left;
   margin-right: 5px;
-  margin-bottom: 10px; }
+  margin-bottom: 5px; }
 
 .current-month-day {
   border: 2px solid #0099cc;
@@ -87,4 +87,15 @@ a:hover {
 .numericalDate {
   font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 12px;
-  width: 10px; }
+  width: 10px;
+  float: left;
+  width: 20px; }
+
+.addEventBtn {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: white;
+  color: #0099cc;
+  float: left;
+  font-size: 13px; }
